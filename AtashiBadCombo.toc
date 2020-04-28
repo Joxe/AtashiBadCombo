@@ -1,0 +1,9 @@
+## Interface: 11304
+## Title: Atashi Bad Combo Tracker
+## Author: Joxe
+## Version: 1.0
+## eMail: nej
+## URL: nej
+## Notes: Counts the number of avoided attacks by your target and posts combos.
+
+AtashiBadCombo.lua
