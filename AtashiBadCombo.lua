@@ -57,11 +57,11 @@ function AtashiBadCombo:OnEvent(event, ...)
 				if ShouldTrackSpell(spellId) then
 					local missType, isOffHand, amountMissed = select(12, ...)
 		
-					if missType == "DODGE" or missType == "PARRY" or missType == "MISS" then
+					--if missType == "DODGE" or missType == "PARRY" or missType == "MISS" then
 						AtashiBadCombo.m_missCount = AtashiBadCombo.m_missCount + 1
-					end
+					--end
 
-					DEFAULT_CHAT_FRAME:AddMessage("Missed with " .. spellId .. "(" .. missType .. ")")
+					--DEFAULT_CHAT_FRAME:AddMessage("Missed with " .. spellId .. "(" .. missType .. ")")
 				end
 			elseif subevent == "SPELL_DAMAGE" or subevent == "SPELL_AURA_APPLIED" then
 				local spellId = select(13, ...)
@@ -78,7 +78,7 @@ function AtashiBadCombo:OnEvent(event, ...)
 					end
 					
 					AtashiBadCombo.m_missCount = 0
-					DEFAULT_CHAT_FRAME:AddMessage("Hit with " .. spellId)
+					--DEFAULT_CHAT_FRAME:AddMessage("Hit with " .. spellId)
 				end
 			end
 		end
