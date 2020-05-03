@@ -3,6 +3,10 @@ local AtashiBadCombo = CreateFrame("FRAME", "AtashiBadCombo")
 AtashiBadCombo:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 AtashiBadCombo.m_missCount = 0
 AtashiBadCombo.m_trackedSkills = {
+	["DRUID"] = {
+		"Maul",
+		"Swipe"
+	},
 	["WARRIOR"] = {
 		"Sunder Armor",
 		"Heroic Strike",
